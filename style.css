@@ -42,6 +42,8 @@ h6 {
     color: #595959;
     font-size: 1.2em;
     margin-bottom: 40px;
+    max-width: 50%;
+    margin: 20px auto 30px auto;
 }
 
 .carousel-container {
