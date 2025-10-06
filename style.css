@@ -374,7 +374,7 @@ h6 {
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .card {
+    .dr-card {
         flex: 0 0 calc(33.33% - 14px);
         /* show 3 cards */
         max-width: calc(33.33% - 14px);
@@ -392,17 +392,17 @@ h6 {
         /* smaller paragraph under heading */
     }
 
-    .card h3 {
+    .dr-card h3 {
         font-size: 16px;
         /* smaller card title */
     }
 
-    .card p {
+    .dr-card p {
         font-size: 14px;
         /* smaller card text */
     }
 
-    .card {
+    .dr-card {
         flex: 0 0 100%;
         /* show 1 card */
         max-width: 100%;
@@ -422,15 +422,15 @@ h6 {
         font-size: 12px;
     }
 
-    .card h3 {
+    .dr-card h3 {
         font-size: 15px;
     }
 
-    .card p {
+    .dr-card p {
         font-size: 13px;
     }
 
-    .card {
+    .dr-card {
         flex: 0 0 100%;
         /* still 1 card */
         max-width: 100%;
