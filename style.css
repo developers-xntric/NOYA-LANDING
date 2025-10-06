@@ -195,7 +195,6 @@ h6 {
 
 .commitment-title {
     font-size: 50px;
-    font-weight: 400;
     text-transform: uppercase;
     color: #6d3636;
     line-height: 1.2;
@@ -293,13 +292,13 @@ main {
 
   .consultation-text h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 45px;
     font-weight: 500;
   }
 
   .consultation-text p {
     margin: 5px 0 0 0;
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .consultation-button {
@@ -316,6 +315,26 @@ main {
   .consultation-button:hover {
     background-color: rgba(255,255,255,0.4);
   }
+@media (max-width: 480px) {
+    .consultation-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .consultation-text h2 {
+        font-size: 28px;
+    }
+    
+    .consultation-text p {
+        font-size: 14px;
+    }
+    
+    .consultation-button {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}
 
 /* slider section---------------------------------
 ------------------------------------------- */
@@ -332,7 +351,7 @@ main {
 
 .section-title {
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     color: #5a3b32;
     letter-spacing: 1px;
@@ -1022,7 +1041,7 @@ header .btn-consult {
     font-family: "Afterglow", serif;
     font-size: 2.2rem;
     color: #6D3636;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .consult-btn {
@@ -1405,8 +1424,8 @@ header .btn-consult {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: "Afterglow", serif;
-    font-weight: 400;
-    color: #f7d7cc;
+    font-weight: 600;
+    color: white;
 }
 
 .footer-column ul {
