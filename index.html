@@ -5,9 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testimonial Carousel</title>
     <link rel="stylesheet" href="style.css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
 
   <body>
+
+     <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="Noya Logo" />
+      </div>
+      <div class="right">
+        <div class="lang">
+          <!-- Language Symbol Top -->
+          <img
+            src="images/language-symbol.png"
+            alt="Language Symbol"
+            width="40"
+            height="40"
+          />
+        </div>
+        <div class="btn-consult">BOOK YOUR CONSULTATION →</div>
+      </div>
+    </header>
+
+
+  <!-- Hero -->
+    <section class="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="images/hero-bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <!-- Left -->
+        <div class="hero-left">
+          <h1>REDEFINING AESTHETICS IN SAUDI ARABIA WITH GLOBAL STANDARDS.</h1>
+          <p>
+            With deep knowledge and understanding of modern beauty, we blend
+            science, artistry, and innovation to deliver the results you desire.
+          </p>
+          <button class="btn-learn">LEARN MORE →</button>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="consult-form">
+          <h2>Book Your Consultation Now</h2>
+          <div class="form-row">
+            <input type="text" placeholder="Your Full Name" />
+            <input type="text" placeholder="Your Phone Number" />
+          </div>
+          <div class="form-row">
+            <select>
+              <option value="" disabled selected>Select Service</option>
+              <option>Service 1</option>
+              <option>Service 2</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <textarea placeholder="Your Message"></textarea>
+          </div>
+          <button>Book Now</button>
+        </div>
+      </div>
+
+      <!-- Bottom Center -->
+      <div class="hero-bottom">
+        <a id="noya-symbol" href="#"
+          ><img src="images/noya-symbol.png" class="noya-symbol" alt="logo" height="35" width="35"
+        /></a>
+        <a href="#"
+         
+          ><img
+            src="images/whatsapp.png"
+            alt="WhatsApp"
+             id="whatsapp"
+            height="25"
+            width="25"
+          />
+          <p>
+        
+          WhatsApp</p></a
+          
+        >
+        <a href="#"
+       
+          ><img src="images/phone.png"  id="call" alt="Call" height="25" width="25" />
+          <p>Let's Talk</p></a
+        >
+      </div>
+    </section>
+
     <section class="testimonial-section">
       <h1 class="title">NEW LEVEL OF CONFIDENCE</h1>
       <p class="subtitle">
@@ -352,6 +444,185 @@
             </div>
         </div>
     </section>
+
+    <!-- Second Section -->
+    <section class="services-section">
+      <div class="services-header">
+        <h2>OUR TOP SERVICES</h2>
+        <a href="#" class="consult-btn">BOOK YOUR CONSULTATION →</a>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="images/service-1.png" alt="Plastic Surgery" />
+          <div class="overlay">
+            <h3>PLASTIC SURGERY</h3>
+            <p>
+              Advanced skincare using the latest therapeutic techniques to
+              enhance radiance and health.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card" id="second-col-card">
+          <img src="images/service-2.png" alt="Aesthetics Solutions" />
+          <div class="overlay">
+            <h3>AESTHETICS SOLUTIONS</h3>
+            <p>
+              Advanced skincare using the latest therapeutic techniques to
+              enhance radiance and health.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card" id="third-col-card">
+          <img src="images/service-3.png" alt="Skin Care Center" />
+          <div class="overlay">
+            <h3>SKIN CARE CENTER</h3>
+            <p>
+              Advanced skincare using the latest therapeutic techniques to
+              enhance radiance and health.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card" id="first-col-last-card">
+          <img src="images/service-4.png" alt="Laser Treatments" />
+          <div class="overlay">
+            <h3>LASER TREATMENTS</h3>
+            <p>
+              Advanced skincare using the latest therapeutic techniques to
+              enhance radiance and health.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card" id="second-col-last-card">
+          <img src="images/service-5.png" alt="Skincare" />
+          <div class="overlay">
+            <h3>SKINCARE</h3>
+            <p>
+              Advanced skincare using the latest therapeutic techniques to
+              enhance radiance and health.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card" id="third-col-last-card">
+          <img src="images/service-6.png" alt="Hair Care" />
+          <div class="overlay">
+            <h3>HAIR CARE</h3>
+            <p>
+              Advanced skincare using the latest therapeutic techniques to
+              enhance radiance and health.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Third Section -->
+    <section class="consultation-section">
+      <div class="consultation-container">
+        <div class="consult-form2">
+          <h2>Book Your Consultation Now</h2>
+          <div class="form-row">
+            <input type="text" placeholder="Your Full Name" />
+            <input type="text" placeholder="Your Phone Number" />
+          </div>
+          <div class="form-row">
+            <select>
+              <option value="" disabled selected>Select Service</option>
+              <option>Service 1</option>
+              <option>Service 2</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <textarea placeholder="Your Message"></textarea>
+          </div>
+          <button>Book Now</button>
+        </div>
+      </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+      <!-- Top Row with 5 Images -->
+      <div class="footer-images">
+        <img src="/images/rectangle-1.png" alt="Footer Image 1" />
+        <img src="/images/rectangle-2.png" alt="Footer Image 2" />
+        <img src="/images/rectangle-3.png" alt="Footer Image 3" />
+        <img src="/images/rectangle-4.png" alt="Footer Image 4" />
+        <img src="/images/rectangle-5.png" alt="Footer Image 5" />
+      </div>
+
+      <!-- Main Footer Content -->
+      <div class="footer-main">
+        <div class="footer-column about">
+          <div class="logo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <p>At NOYA, we believe beauty is renewed through the details.</p>
+        </div>
+
+        <div class="footer-column services">
+          <h3>SERVICES</h3>
+          <ul>
+            <li>Skincare</li>
+            <li>Advanced Aesthetic Solutions</li>
+            <li>Laser Solutions</li>
+            <li>Plastic Surgery</li>
+            <li>Hair Care</li>
+            <li>Skin Care Center</li>
+            <li>Noya Pharmacy</li>
+          </ul>
+        </div>
+
+        <div class="footer-column contact">
+          <div>
+            <h3>GET IN TOUCH</h3>
+            <div class="contact-info">
+              <div>
+                <p><strong>Unified Number:</strong> 920006200</p>
+              </div>
+              <div>
+                <p>
+                  <strong>Email:</strong>
+                  <a
+                    href="
+                mailto:info@noyaclinic.sa"
+                    >info@noyaclinic.sa</a
+                  >
+                </p>
+              </div>
+            </div>
+            <p>
+              <strong>Main Location:</strong> NOYA Clinic – Al-Nakheel Branch –
+              Riyadh, Kingdom of Saudi Arabia
+            </p>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large Text -->
+      <div class="footer-brand">
+        <h2>NOYA COSMETIC</h2>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom">
+        <p>
+          Copyright © 2025 NOYA – Noya Cosmetic Clinic. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
