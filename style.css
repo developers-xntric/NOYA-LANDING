@@ -140,6 +140,18 @@ h6 {
     flex-shrink: 0;
 }
 
+@media (max-width: 500px) {
+    .email-mob {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) {
+    .desktop-email {
+        display: none;
+    }
+}
+
 @media (max-width: 350px) {
     .profiles-container {
         overflow: hidden;
@@ -883,7 +895,7 @@ header .btn-consult {
         height: 100%;
         padding-top: 70PX;
     }
-    
+
 }
 
 @media (max-width: 1024px) {
@@ -1169,7 +1181,8 @@ header .btn-consult {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 1.5rem;
     }
-#first-col-last-card {
+
+    #first-col-last-card {
         height: 90%;
     }
 
@@ -1615,10 +1628,11 @@ a {
 
 
 .service-card {
-  cursor: pointer;
-  transition: opacity 0.3s ease; /* Optional: subtle hover effect */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    /* Optional: subtle hover effect */
 }
 
 .service-card:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }

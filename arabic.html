@@ -1,114 +1,87 @@
 <!DOCTYPE html>
 <html lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testimonial Carousel</title>
-    <link rel="stylesheet" href="arabic.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="logo">
-        <img src="images/logo.png" alt="Noya Logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonial Carousel</title>
+  <link rel="stylesheet" href="arabic.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Noya Logo" />
+    </div>
+    <div class="right">
+      <div class="lang" onclick="window.location.href='index.html';">
+        <!-- Language Symbol Top -->
+        <img src="images/language-symbol.png" alt="Language Symbol" width="40" height="40" />
       </div>
-      <div class="right">
-        <div class="lang" onclick="window.location.href='index.html';">
-          <!-- Language Symbol Top -->
-          <img
-            src="images/language-symbol.png"
-            alt="Language Symbol"
-            width="40"
-            height="40"
-          />
-        </div>
-        <div class="btn-consult">← أحجز موعدك الأن </div>
-      </div>
-    </header>
+      <div class="btn-consult">← أحجز موعدك الأن </div>
+    </div>
+  </header>
 
-    <!-- Hero -->
-    <section dir="rtl" class="hero">
-      <video autoplay muted loop playsinline class="hero-video">
-        <source src="images/hero-bg.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div class="hero-overlay"></div>
+  <!-- Hero -->
+  <section dir="rtl" class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="images/hero-bg.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
 
-      <div class="hero-content">
-        <!-- Left -->
-        <div class="hero-left">
-          <h1>نعيد تعريف الجمال في السعودية وفقا لأعلى المعايير العالمية</h1>
-          <p>
-            ي نويا، نمزج بين العلم والفن والابتكار لنمنحك تجربة متميزة ونتائج
-            طبيعية تعكس ثقًتك بنفسك.
-          </p>
-          <div style="display: flex; ">
-            <button class="btn-learn">اكتشفي المزيد ←</button>
-          </div>
-        </div>
-
-        <!-- Right: Form -->
-        <div class="consult-form">
-          <h2>أحجز موعدك الأن</h2>
-          <div class="form-row">
-            <input type="text" placeholder="الاسم الكامل" />
-            <input type="text" placeholder="رقم هاتفك" />
-          </div>
-          <div class="form-row">
-            <select>
-              <option value="" disabled selected>اختر الخدمة</option>
-              <option>العناية بالبشرة</option>
-              <option>حلول الليزر</option>
-              <option>الجراحة التجميلية</option>
-              <option>مركز العناية بالبشرة</option>
-              <option>التجميل المتقدم</option>
-              <option>العناية بالشعر</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <textarea placeholder="رسالتك"></textarea>
-          </div>
-          <button>احجزي الآن</button>
+    <div class="hero-content">
+      <!-- Left -->
+      <div class="hero-left">
+        <h1>نعيد تعريف الجمال في السعودية وفقا لأعلى المعايير العالمية</h1>
+        <p>
+          ي نويا، نمزج بين العلم والفن والابتكار لنمنحك تجربة متميزة ونتائج
+          طبيعية تعكس ثقًتك بنفسك.
+        </p>
+        <div style="display: flex; ">
+          <button class="btn-learn">اكتشفي المزيد ←</button>
         </div>
       </div>
 
-      <!-- Bottom Center -->
-      <div class="hero-bottom">
-        <a id="noya-symbol" href="#"
-          ><img
-            src="images/noya-symbol.png"
-            class="noya-symbol"
-            alt="logo"
-            height="35"
-            width="35"
-        /></a>
-        <a href="#"
-          ><img
-            src="images/whatsapp.png"
-            alt="WhatsApp"
-            id="whatsapp"
-            height="25"
-            width="25"
-          />
-          <p>واتساب</p>
-        </a>
-        <a href="#"
-          ><img
-            src="images/phone.png"
-            id="call"
-            alt="Call"
-            height="25"
-            width="25"
-          />
-          <p>دعونا نتحدث</p>
-        </a>
+      <!-- Right: Form -->
+      <div class="consult-form">
+        <h2>أحجز موعدك الأن</h2>
+        <div class="form-row">
+          <input type="text" placeholder="الاسم الكامل" />
+          <input type="text" placeholder="رقم هاتفك" />
+        </div>
+        <div class="form-row">
+          <select>
+            <option value="" disabled selected>اختر الخدمة</option>
+            <option>العناية بالبشرة</option>
+            <option>حلول الليزر</option>
+            <option>الجراحة التجميلية</option>
+            <option>مركز العناية بالبشرة</option>
+            <option>التجميل المتقدم</option>
+            <option>العناية بالشعر</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <textarea placeholder="رسالتك"></textarea>
+        </div>
+        <button>احجزي الآن</button>
       </div>
-    </section>
+    </div>
+
+    <!-- Bottom Center -->
+    <div class="hero-bottom">
+      <a id="noya-symbol" href="#"><img src="images/noya-symbol.png" class="noya-symbol" alt="logo" height="35"
+          width="35" /></a>
+      <a href="#"><img src="images/whatsapp.png" alt="WhatsApp" id="whatsapp" height="25" width="25" />
+        <p>واتساب</p>
+      </a>
+      <a href="#"><img src="images/phone.png" id="call" alt="Call" height="25" width="25" />
+        <p>دعونا نتحدث</p>
+      </a>
+    </div>
+  </section>
   <main>
     <section class="container" style="margin: 100px 0 50px 0">
       <h1 class="title">مستوى جديد من الثقة</h1>
@@ -188,11 +161,11 @@
     </section>
   </main>
 
-   <!-- Second Section -->
+  <!-- Second Section -->
   <section class="services-section">
     <div class="services-header">
       <h2>خدماتنا المميزة</h2>
-      <a href="#" class="consult-btn"> ←احجزي استشارتك الآن  </a>
+      <a href="#" class="consult-btn"> ←احجزي استشارتك الآن </a>
     </div>
 
     <div class="services-grid">
@@ -216,7 +189,7 @@
         </div>
       </div>
 
-     
+
       <div class="service-card" id="third-col-card">
         <img src="images/service-3.png" alt="Skin Care Center" />
         <div class="overlay">
@@ -227,7 +200,7 @@
         </div>
       </div>
 
-      
+
       <div class="service-card" id="first-col-last-card">
         <img src="images/service-4.png" alt="Laser Treatments" />
         <div class="overlay">
@@ -238,7 +211,7 @@
         </div>
       </div>
 
-      
+
       <div class="service-card" id="second-col-last-card">
         <img src="images/service-5.png" alt="Skincare" />
         <div class="overlay">
@@ -254,14 +227,14 @@
         <div class="overlay">
           <h3>العناية بالشعر</h3>
           <p>
-         .عناية متقدمة بالبشرة باستخدام أحدث التقنيات العلاجية لتعزيز إشراقتها وصحتها
+            .عناية متقدمة بالبشرة باستخدام أحدث التقنيات العلاجية لتعزيز إشراقتها وصحتها
           </p>
         </div>
       </div>
     </div>
   </section>
 
-    <!-- Commitment Section -->
+  <!-- Commitment Section -->
   <section dir="rtl" class="commitment-section">
     <div class="commitment-images">
       <img src="./images/commitment-2.png" id="commitment-2" alt="Nova Clinic Building" />
@@ -270,25 +243,25 @@
 
     <div class="commitment-content">
       <h2 class="commitment-title">تعزيز ثقتك التزامنا</h2>
-     <p class="commitment-text">
-  في نويا، نمتلك فهمًا عميقًا لمفهوم الجمال العصري، ونمزج بين العلم والفن
-  والابتكار لنقدم لك النتائج التي تطمحين إليها. جميع علاجاتنا تعتمد
-  على أحدث التقنيات العالمية وخبرة نخبة من الأطباء السعوديين، لنمنحك
-  تجربة تقوم على الثقة والخصوصية والرعاية الاستثنائية.
-</p>
+      <p class="commitment-text">
+        في نويا، نمتلك فهمًا عميقًا لمفهوم الجمال العصري، ونمزج بين العلم والفن
+        والابتكار لنقدم لك النتائج التي تطمحين إليها. جميع علاجاتنا تعتمد
+        على أحدث التقنيات العالمية وخبرة نخبة من الأطباء السعوديين، لنمنحك
+        تجربة تقوم على الثقة والخصوصية والرعاية الاستثنائية.
+      </p>
 
       <a href="#" class="commitment-btn">احجزي استشارتك الآن ← </a>
     </div>
   </section>
 
-     
+
   <!-- Distinguished Experts -->
   <section class="experts-section">
     <h2 class="section-title">نخبة متميزة من الخبراء</h2>
-   <p class="section-subtitle">
-  في نويا، نجمع نخبة من أفضل الأطباء والاستشاريين في طب الجلدية والتجميل،
-  لنضمن لك رعاية احترافية ونتائج استثنائية مصممة خصيصًا لتناسبك.
-</p>
+    <p class="section-subtitle">
+      في نويا، نجمع نخبة من أفضل الأطباء والاستشاريين في طب الجلدية والتجميل،
+      لنضمن لك رعاية احترافية ونتائج استثنائية مصممة خصيصًا لتناسبك.
+    </p>
 
 
     <div class="carousel-container">
@@ -355,18 +328,18 @@
     </div>
   </section>
 
- <div class="consultation-banner">
-      <div class="consultation-text">
-        <h2>احصلي على استشارتك المجانية اليوم</h2>
-        <p>
-          مترددة في خطوتك الأولي؟ فريقًنا سيرشدك نحو أفضل العلاجات والحلول التي
-          تناسبك تمام
-        </p>
-      </div>
-      <button class="btn-learn" style="color: white">← تحدثي إلينا </button>
- </div>
+  <div class="consultation-banner">
+    <div class="consultation-text">
+      <h2>احصلي على استشارتك المجانية اليوم</h2>
+      <p>
+        مترددة في خطوتك الأولي؟ فريقًنا سيرشدك نحو أفضل العلاجات والحلول التي
+        تناسبك تمام
+      </p>
+    </div>
+    <button class="btn-learn" style="color: white">← تحدثي إلينا </button>
+  </div>
 
-  
+
   <main>
     <section class="container" style="margin: 40px 0 0px 0">
       <h1 class="title">تواصلي معنا الآن</h1>
@@ -480,36 +453,36 @@
     </section>
   </main>
 
-    <!-- Third Section -->
-    <section class="consultation-section" id="consultation">
-      <div class="consultation-container">
-        <div class="consult-form2">
-          <h2>أحجز موعدك الأن</h2>
-          <div class="form-row">
-            <input type="text" placeholder="الاسم الكامل" />
-            <input type="text" placeholder="رقم هاتفك" />
-          </div>
-          <div class="form-row">
-            <select>
-              <option value="" disabled selected>اختر الخدمة</option>
-              <option>العناية بالبشرة</option>
-              <option>حلول الليزر</option>
-              <option>الجراحة التجميلية</option>
-              <option>مركز العناية بالبشرة</option>
-              <option>التجميل المتقدم</option>
-              <option>العناية بالشعر</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <textarea placeholder="رسالتك"></textarea>
-          </div>
-          <button>احجزي الآن</button>
+  <!-- Third Section -->
+  <section class="consultation-section" id="consultation">
+    <div class="consultation-container">
+      <div class="consult-form2">
+        <h2>أحجز موعدك الأن</h2>
+        <div class="form-row">
+          <input type="text" placeholder="الاسم الكامل" />
+          <input type="text" placeholder="رقم هاتفك" />
         </div>
-      </div> 
-    </section> 
+        <div class="form-row">
+          <select>
+            <option value="" disabled selected>اختر الخدمة</option>
+            <option>العناية بالبشرة</option>
+            <option>حلول الليزر</option>
+            <option>الجراحة التجميلية</option>
+            <option>مركز العناية بالبشرة</option>
+            <option>التجميل المتقدم</option>
+            <option>العناية بالشعر</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <textarea placeholder="رسالتك"></textarea>
+        </div>
+        <button>احجزي الآن</button>
+      </div>
+    </div>
+  </section>
 
- 
-  
+
+
 
   <!-- Footer -->
   <footer class="footer">
@@ -524,7 +497,7 @@
 
     <!-- Main Footer Content -->
     <div class="footer-main">
-      
+
       <!-- Main Footer Content -->
       <div dir="rtl" class="footer-main">
         <div class="footer-column about">
@@ -534,7 +507,7 @@
           <p style="text-align: start;">في NOYA، نؤمن بأن الجمال يتجدد من خلال التفاصيل.</p>
         </div>
 
-      
+
         <div class="footer-column services">
           <h3>خدمات</h3>
           <ul>
@@ -548,7 +521,7 @@
           </ul>
         </div>
 
-       
+
         <div class="footer-column contact">
           <div>
             <h3>تواصل معنا</h3>
@@ -579,21 +552,21 @@
       </div>
     </div>
 
-  
+
     <!-- Large Text -->
     <div class="footer-brand">
       <h2>نويا كوزماتيك</h2>
     </div>
 
     <!-- Bottom Copyright -->
-  <div class="footer-bottom">
-    <p>
-      جميع الحقوق محفوظة © ٢٠٢٥ لعيادة نويا للتجميل.
-    </p>
-  </div>
+    <div class="footer-bottom">
+      <p>
+        جميع الحقوق محفوظة © ٢٠٢٥ لعيادة نويا للتجميل.
+      </p>
+    </div>
   </footer>
-  
- 
+
+
 
   <script src="script.js"></script>
 </body>
