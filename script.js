@@ -154,3 +154,28 @@ prevBtn.addEventListener("click", () => {
   }
   updateCarousel();
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const heroBottom = document.querySelector(".hero-bottom");
+  const footer = document.querySelector(".footer");
+
+  if (!heroBottom || !footer) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Footer visible → hide hero-bottom
+          heroBottom.style.display = "none";
+        } else {
+          // Footer not visible → show hero-bottom
+          heroBottom.style.display = "";
+        }
+      });
+    },
+    { threshold: 0.1 } // Adjust trigger sensitivity
+  );
+
+  observer.observe(footer);
+});
