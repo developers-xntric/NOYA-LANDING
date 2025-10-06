@@ -276,6 +276,47 @@ main {
     width: 100vw;
 }
 
+
+ .consultation-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8F8A63; /* soft olive color from image */
+    color: white;
+    padding: 25px 40px;
+    border-radius: 30px 30px 0 0;
+    width: 90%;
+    border: none;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .consultation-text h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .consultation-text p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+  }
+
+  .consultation-button {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+
+  .consultation-button:hover {
+    background-color: rgba(255,255,255,0.4);
+  }
+
 /* slider section---------------------------------
 ------------------------------------------- */
 .experts-section {
@@ -380,7 +421,7 @@ main {
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .card {
+    .dr-card {
         flex: 0 0 calc(33.33% - 14px);
         /* show 3 cards */
         max-width: calc(33.33% - 14px);
@@ -398,17 +439,17 @@ main {
         /* smaller paragraph under heading */
     }
 
-    .card h3 {
+    .dr-card h3 {
         font-size: 16px;
         /* smaller card title */
     }
 
-    .card p {
+    .dr-card p {
         font-size: 14px;
         /* smaller card text */
     }
 
-    .card {
+    .dr-card {
         flex: 0 0 100%;
         /* show 1 card */
         max-width: 100%;
@@ -432,15 +473,15 @@ main {
         font-size: 12px;
     }
 
-    .card h3 {
+    .dr-card h3 {
         font-size: 15px;
     }
 
-    .card p {
+    .dr-card p {
         font-size: 13px;
     }
 
-    .card {
+    .dr-card {
         flex: 0 0 100%;
         /* still 1 card */
         max-width: 100%;
