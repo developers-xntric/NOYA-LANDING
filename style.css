@@ -1578,3 +1578,13 @@ a {
     }
 
 }
+
+
+.service-card {
+  cursor: pointer;
+  transition: opacity 0.3s ease; /* Optional: subtle hover effect */
+}
+
+.service-card:hover {
+  opacity: 0.9;
+}

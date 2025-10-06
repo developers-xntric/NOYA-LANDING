@@ -7,6 +7,24 @@ const originalProfiles = Array.from(profilesTrack.children);
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
+
+// Smooth scroll to consultation section on service card click
+document.addEventListener('DOMContentLoaded', function() {
+  const serviceCards = document.querySelectorAll('.service-card');
+  const consultationSection = document.getElementById('consultation');
+
+  serviceCards.forEach(card => {
+    card.addEventListener('click', function() {
+      if (consultationSection) {
+        consultationSection.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start' // Aligns the top of the section with the top of the viewport
+        });
+      }
+    });
+  });
+});
+
 // Duplicate for cards
 const cardClones = originalCards.map(card => card.cloneNode(true));
 cardClones.forEach(clone => cardsTrack.prepend(clone));
