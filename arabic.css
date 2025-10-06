@@ -739,6 +739,7 @@ header .btn-consult {
 .hero-left h1 {
     font-family: 'Afterglow', serif;
     font-size: 2.8rem;
+    text-align: right;
     line-height: 1.3;
     margin-bottom: 20px;
 }
@@ -749,6 +750,7 @@ header .btn-consult {
     font-size: 1.1rem;
     margin-bottom: 30px;
     max-width: 600px;
+    text-align: right;
 }
 
 .btn-learn {
@@ -764,6 +766,7 @@ header .btn-consult {
     font-weight: 600;
     font-family: 'Urbanist', sans-serif;
     color: #FCCC9E;
+    
 }
 
 /* Right Side Form */
@@ -783,7 +786,7 @@ header .btn-consult {
     font-family: 'Afterglow', serif;
     font-size: 1.6rem;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: right;
 }
 
 .consult-form .form-row {
@@ -1275,7 +1278,7 @@ header .btn-consult {
     font-family: 'Afterglow', serif;
     font-size: 1.6rem;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: right;
 }
 
 .consult-form2 .form-row {
