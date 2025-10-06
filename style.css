@@ -270,6 +270,12 @@ h6 {
     }
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
 /* slider section---------------------------------
 ------------------------------------------- */
 .experts-section {
@@ -374,7 +380,7 @@ h6 {
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .dr-card {
+    .card {
         flex: 0 0 calc(33.33% - 14px);
         /* show 3 cards */
         max-width: calc(33.33% - 14px);
@@ -392,17 +398,17 @@ h6 {
         /* smaller paragraph under heading */
     }
 
-    .dr-card h3 {
+    .card h3 {
         font-size: 16px;
         /* smaller card title */
     }
 
-    .dr-card p {
+    .card p {
         font-size: 14px;
         /* smaller card text */
     }
 
-    .dr-card {
+    .card {
         flex: 0 0 100%;
         /* show 1 card */
         max-width: 100%;
@@ -422,15 +428,15 @@ h6 {
         font-size: 12px;
     }
 
-    .dr-card h3 {
+    .card h3 {
         font-size: 15px;
     }
 
-    .dr-card p {
+    .card p {
         font-size: 13px;
     }
 
-    .dr-card {
+    .card {
         flex: 0 0 100%;
         /* still 1 card */
         max-width: 100%;
