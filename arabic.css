@@ -1025,7 +1025,7 @@ header .btn-consult {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 6rem 0rem;
+    padding-top: 6rem ;
     font-family: "Urbanist", sans-serif;
 }
 
@@ -1128,6 +1128,7 @@ header .btn-consult {
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 0.4rem;
+    text-align: right;
     text-transform: uppercase;
 }
 
@@ -1136,6 +1137,7 @@ header .btn-consult {
     font-size: 0.9rem;
     line-height: 1.4;
     opacity: 0.85;
+    text-align: right;
 }
 
 /* Responsive tweaks */
@@ -1228,6 +1230,7 @@ header .btn-consult {
     border-radius: 25px;
     overflow: hidden;
     color: #fff;
+    margin-top: 80px;
 }
 
 /* Background image */
