@@ -34,12 +34,12 @@ h6 {
 /* p {
     color: #595959;
 } */
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 100px;
+    overflow-x: hidden;
 }
 
 .title {
@@ -151,10 +151,15 @@ h6 {
         width: 300px;
     }
 
+    .title {
+        font-size: 20px;
+    }
+
     .subtitle {
         max-width: 90%;
     }
 }
+
 
 /* Our Commitment, Your Confidence--------------------
 ------------------------------------------- */
@@ -276,11 +281,12 @@ main {
 }
 
 
- .consultation-banner {
+.consultation-banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8F8A63; /* soft olive color from image */
+    background-color: #8F8A63;
+    /* soft olive color from image */
     color: white;
     padding: 25px 40px;
     border-radius: 30px 30px 0 0;
@@ -288,18 +294,18 @@ main {
     border: none;
     max-width: 1300px;
     margin: 0 auto;
-  }
+}
 
-  .consultation-text h2 {
+.consultation-text h2 {
     margin: 0;
     font-size: 45px;
     font-weight: 500;
-  }
+}
 
-  .consultation-text p {
+.consultation-text p {
     margin: 5px 0 0 0;
     font-size: 17px;
-  }
+}
 
 
 @media (max-width: 480px) {
@@ -308,15 +314,15 @@ main {
         text-align: center;
         gap: 15px;
     }
-    
+
     .consultation-text h2 {
         font-size: 28px;
     }
-    
+
     .consultation-text p {
         font-size: 14px;
     }
-    
+
     .consultation-button {
         padding: 8px 20px;
         font-size: 12px;
