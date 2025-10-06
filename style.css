@@ -28,7 +28,7 @@ h5,
 h6 {
     /* color: #6D3636; */
     font-family: "Afterglow", serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* p {
@@ -412,6 +412,10 @@ main {
         flex: 0 0 100%;
         /* show 1 card */
         max-width: 100%;
+    }
+
+    .map-phone-desktop {
+        display: none;
     }
 }
 
