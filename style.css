@@ -39,7 +39,7 @@ h6 {
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
-    margin: 40px 0 40px 0;
+    margin-bottom: 100px;
 }
 
 .title {
@@ -110,7 +110,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .arrow {
@@ -150,8 +150,11 @@ h6 {
         flex: 0 0 300px;
         width: 300px;
     }
-}
 
+    .subtitle {
+        max-width: 90%;
+    }
+}
 
 /* Our Commitment, Your Confidence--------------------
 ------------------------------------------- */
@@ -263,6 +266,7 @@ h6 {
 
     #commitment-2 {
         height: auto;
+        display: none;
     }
 }
 
@@ -477,19 +481,85 @@ h6 {
 }
 
 .map-upper .top .content p {
-    position: relative;
-    bottom: 20px;
+    color: #595959;
     font-size: 18px;
     text-align: start;
 }
 
 .map-upper .top .content h1 {
+    color: #5e2c2a;
     font-size: 35px;
     text-align: start;
 }
 
+.map-lower .top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(252, 204, 158, 0.25);
+    width: 600px;
+    height: 140px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
 
+.map-lower .top .icon-div {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6D3636;
+    border-radius: 10px;
+}
 
+.map-lower .top .content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-lower .top .content p {
+    color: #595959;
+    font-size: 18px;
+    text-align: start;
+}
+
+.map-lower .top .content h1 {
+    font-size: 35px;
+    text-align: start;
+    color: #5e2c2a;
+}
+
+iframe {
+    width: 600px;
+}
+
+@media (max-width: 600px) {
+    .map-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-upper .top,
+    .map-lower .top {
+        width: 100%;
+    }
+
+    .map-upper .top .content h1,
+    .map-lower .top .content h1 {
+        font-size: 24px;
+    }
+
+    .map-upper .top .content p,
+    .map-lower .top .content p {
+        font-size: 18px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
 
 /* _________________NEW ADDED________________________ */
 
