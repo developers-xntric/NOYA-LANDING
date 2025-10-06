@@ -156,6 +156,7 @@ p {
     display: flex;
     justify-content: center;
     gap: 20px;
+    border-radius: 30px;
 }
 
 .map-upper .top {
@@ -164,13 +165,13 @@ p {
     align-items: center;
     background: rgba(252, 204, 158, 0.25);
     width: 600px;
-    height: 200px;
-    border-radius: 30px;
+    height: 180px;
+    border-radius: 25px 25px 0 0;
 }
 
 .map-upper .top .icon-div {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
