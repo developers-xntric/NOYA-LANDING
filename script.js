@@ -100,11 +100,11 @@ window.addEventListener('resize', () => {
 
 
 
-const carousel = document.getElementById("carousel");
+const carousel = document.getElementById("carousel-2");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
-const card = carousel.querySelector(".card");
+const card = carousel.querySelector(".dr-card");
 const cardStyle = getComputedStyle(card);
 const cardWidth = card.offsetWidth + parseInt(cardStyle.marginRight) + 20; // card width + gap
 const visibleCards = Math.floor(carousel.offsetWidth / card.offsetWidth);
