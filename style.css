@@ -152,6 +152,278 @@ p {
     }
 }
 
+
+/* Our Commitment, Your Confidence--------------------
+------------------------------------------- */
+.commitment-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 60px 0px;
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.commitment-images {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: end;
+} 
+
+.commitment-images img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+#commitment-2 {
+  height: 461px;
+}
+/* Content */
+.commitment-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.commitment-title {
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #6d3636;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.commitment-text {
+  font-size: 17px;
+  color: #595959;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.commitment-btn {
+  display: inline-block;
+  background-color: #fccc9e0d;
+  padding: 12px 25px;
+  border: 1px solid #6d3636;
+  border-radius: 109px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #5a3b32;
+  transition: all 0.3s ease;
+}
+
+.commitment-btn:hover {
+  background: #5a3b32;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .commitment-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .commitment-content {
+    text-align: center;
+  }
+
+  .commitment-title {
+    font-size: 30px;
+  }
+
+  .commitment-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .commitment-title {
+    font-size: 25px;
+  }
+
+  .commitment-text {
+    font-size: 14px;
+  }
+
+  .commitment-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .commitment-images {
+    flex-direction: column;
+  }
+  #commitment-2 {
+    height: auto;
+  }
+}
+
+/* slider section---------------------------------
+------------------------------------------- */
+.experts-section {
+  /* background-image: url('./images/bg.png');
+  background-position: center;
+  background-repeat: no-repeat; */
+  text-align: center;
+  padding: 50px 20px;
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #5a3b32;
+  letter-spacing: 1px;
+}
+
+.section-subtitle {
+  font-size: 17px;
+  color: #595959;
+  margin: 15px auto 40px;
+  max-width: 700px;
+}
+
+/* Carousel */
+.carousel-container {
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+/* 4 cards visible */
+.dr-card {
+  flex: 0 0 calc(25% - 15px); /* 25% for 4 cards, minus gap adjustment */
+  max-width: calc(25% - 15px);
+  text-align: center;
+}
+
+.dr-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.dr-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #6d3636;
+  margin-bottom: 10px;
+}
+
+.dr-card p {
+  font-size: 16px;
+  color: #595959;
+}
+
+/* Arrows below carousel */
+.carousel-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  gap: 20px;
+}
+.arrow-right {
+  transform: rotateY(180deg);
+}
+
+.arrow-left,
+.arrow-right {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #5a3b32;
+  transition: 0.3s;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  color: #000;
+}
+.arrow-left img,
+.arrow-right img {
+  width: 40px;
+  height: 25px;
+}
+/* Responsive */
+@media (max-width: 1024px) {
+  .card {
+    flex: 0 0 calc(33.33% - 14px); /* show 3 cards */
+    max-width: calc(33.33% - 14px);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 25px; /* smaller heading */
+  }
+
+  .section-subtitle {
+    font-size: 16px; /* smaller paragraph under heading */
+  }
+
+  .card h3 {
+    font-size: 16px; /* smaller card title */
+  }
+
+  .card p {
+    font-size: 14px; /* smaller card text */
+  }
+
+  .card {
+    flex: 0 0 100%; /* show 1 card */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .experts-section {
+    width: 95%;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+
+  .section-subtitle {
+    font-size: 12px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .card {
+    flex: 0 0 100%; /* still 1 card */
+    max-width: 100%;
+  }
+  .arrow-left img,
+  .arrow-right img {
+    width: 20px;
+    height: 20px;
+  }
+  .carousel-arrows {
+    margin-top: 40px;
+  }
+}
 .map-container {
     display: flex;
     justify-content: center;

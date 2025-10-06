@@ -97,3 +97,42 @@ window.addEventListener('resize', () => {
     profilesTrack.style.transition = 'none';
     profilesTrack.style.transform = `translateX(${profilesPos}px)`;
 });
+
+
+
+const carousel = document.getElementById("carousel-2");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+
+const card = carousel.querySelector(".dr-card");
+const cardStyle = getComputedStyle(card);
+const cardWidth = card.offsetWidth + parseInt(cardStyle.marginRight) + 20; // card width + gap
+const visibleCards = Math.floor(carousel.offsetWidth / card.offsetWidth);
+
+let currentIndex = 0;
+
+function updateCarousel() {
+  carousel.scrollTo({
+    left: currentIndex * cardWidth,
+    behavior: "smooth",
+  });
+}
+
+nextBtn.addEventListener("click", () => {
+  const maxIndex = carousel.children.length - visibleCards;
+  if (currentIndex < maxIndex) {
+    currentIndex++;
+  } else {
+    currentIndex = maxIndex; // clamp at last
+  }
+  updateCarousel();
+});
+
+prevBtn.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = 0; // clamp at first
+  }
+  updateCarousel();
+});
