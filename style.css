@@ -237,3 +237,33 @@ p {
     top: 15px;
     text-align: start;
 }
+
+iframe {
+    width: 600px;
+}
+
+@media (max-width: 600px) {
+    .map-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-upper .top,
+    .map-lower .top {
+        width: 100%;
+    }
+
+    .map-upper .top .content h1,
+    .map-lower .top .content h1 {
+        font-size: 24px;
+    }
+
+    .map-upper .top .content p,
+    .map-lower .top .content p {
+        font-size: 18px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
