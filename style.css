@@ -729,6 +729,7 @@ header .btn-consult {
 /* Left Side */
 .hero-left {
     flex: 1;
+    max-width: 800px;
     color: #fff;
 }
 
@@ -868,7 +869,7 @@ header .btn-consult {
     color: #fff;
     text-decoration: none;
     font-family: 'Urbanist', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -876,6 +877,14 @@ header .btn-consult {
 
 
 /* Responsive */
+
+@media (max-width: 1440px) {
+    .hero {
+        height: 100%;
+        padding-top: 70PX;
+    }
+    
+}
 
 @media (max-width: 1024px) {
     .hero {
@@ -1150,6 +1159,30 @@ header .btn-consult {
         height: 90%;
         position: relative;
         bottom: 8%;
+
+    }
+}
+
+@media (max-width: 1360px) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1.5rem;
+    }
+#first-col-last-card {
+        height: 90%;
+    }
+
+    #second-col-last-card {
+        height: 100%;
+        position: relative;
+        bottom: 10%;
+    }
+
+    #third-col-last-card {
+        height: 90%;
+        position: relative;
+        bottom: 1%;
 
     }
 }
