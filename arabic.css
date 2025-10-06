@@ -1415,6 +1415,8 @@ header .btn-consult {
     font-size: 2rem;
     letter-spacing: 3px;
     font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: start;
 }
 
 .footer-column h3 {
@@ -1423,6 +1425,7 @@ header .btn-consult {
     font-family: "Afterglow", serif;
     font-weight: 600;
     color: white;
+    text-align: start;
 }
 
 .footer-column ul {
