@@ -35,67 +35,67 @@ let profilesPos = -profilesLoopLength;
 profilesTrack.style.transform = `translateX(${profilesPos}px)`;
 
 const handleCardsTransitionEnd = () => {
-    cardsTrack.style.transition = 'none';
-    if (cardsPos <= -2 * cardsLoopLength) {
-        cardsPos += cardsLoopLength;
-    } else if (cardsPos >= 0) {
-        cardsPos -= cardsLoopLength;
-    }
-    cardsTrack.style.transform = `translateX(${cardsPos}px)`;
-    setTimeout(() => {
-        cardsTrack.style.transition = 'transform 0.5s ease';
-    }, 0);
+  cardsTrack.style.transition = 'none';
+  if (cardsPos <= -2 * cardsLoopLength) {
+    cardsPos += cardsLoopLength;
+  } else if (cardsPos >= 0) {
+    cardsPos -= cardsLoopLength;
+  }
+  cardsTrack.style.transform = `translateX(${cardsPos}px)`;
+  setTimeout(() => {
+    cardsTrack.style.transition = 'transform 0.5s ease';
+  }, 0);
 };
 
 const handleProfilesTransitionEnd = () => {
-    profilesTrack.style.transition = 'none';
-    if (profilesPos <= -2 * profilesLoopLength) {
-        profilesPos += profilesLoopLength;
-    } else if (profilesPos >= 0) {
-        profilesPos -= profilesLoopLength;
-    }
-    profilesTrack.style.transform = `translateX(${profilesPos}px)`;
-    setTimeout(() => {
-        profilesTrack.style.transition = 'transform 0.5s ease';
-    }, 0);
+  profilesTrack.style.transition = 'none';
+  if (profilesPos <= -2 * profilesLoopLength) {
+    profilesPos += profilesLoopLength;
+  } else if (profilesPos >= 0) {
+    profilesPos -= profilesLoopLength;
+  }
+  profilesTrack.style.transform = `translateX(${profilesPos}px)`;
+  setTimeout(() => {
+    profilesTrack.style.transition = 'transform 0.5s ease';
+  }, 0);
 };
 
 cardsTrack.addEventListener('transitionend', handleCardsTransitionEnd);
 profilesTrack.addEventListener('transitionend', handleProfilesTransitionEnd);
 
 const nextSlide = () => {
-    cardsPos -= cardsStep;
-    cardsTrack.style.transform = `translateX(${cardsPos}px)`;
-    profilesPos -= profilesStep;
-    profilesTrack.style.transform = `translateX(${profilesPos}px)`;
+  cardsPos -= cardsStep;
+  cardsTrack.style.transform = `translateX(${cardsPos}px)`;
+  profilesPos -= profilesStep;
+  profilesTrack.style.transform = `translateX(${profilesPos}px)`;
 };
 
 const prevSlide = () => {
-    cardsPos += cardsStep;
-    cardsTrack.style.transform = `translateX(${cardsPos}px)`;
-    profilesPos += profilesStep;
-    profilesTrack.style.transform = `translateX(${profilesPos}px)`;
+  cardsPos += cardsStep;
+  cardsTrack.style.transform = `translateX(${cardsPos}px)`;
+  profilesPos += profilesStep;
+  profilesTrack.style.transform = `translateX(${profilesPos}px)`;
 };
 
 prevButton.addEventListener('click', prevSlide);
 nextButton.addEventListener('click', nextSlide);
 
 window.addEventListener('resize', () => {
-    cardsItemWidth = document.querySelector('.card').offsetWidth;
-    cardsGap = parseFloat(getComputedStyle(cardsTrack).gap) || 0;
-    cardsStep = cardsItemWidth + cardsGap;
-    cardsLoopLength = originalCards.length * cardsStep;
-    cardsPos = -cardsLoopLength;
-    cardsTrack.style.transition = 'none';
-    cardsTrack.style.transform = `translateX(${cardsPos}px)`;
+  cardsItemWidth = document.querySelector('.card').offsetWidth;
+  cardsGap = parseFloat(getComputedStyle(cardsTrack).gap) || 0;
+  cardsStep = cardsItemWidth + cardsGap;
+  cardsLoopLength = originalCards.length * cardsStep;
+  cardsPos = -cardsLoopLength;
+  cardsTrack.style.transition = 'none';
+  cardsTrack.style.transform = `translateX(${cardsPos}px)`;
 
-    profilesItemWidth = document.querySelector('.profile-img').offsetWidth;
-    profilesGap = parseFloat(getComputedStyle(profilesTrack).gap) || 0;
-    profilesStep = profilesItemWidth + profilesGap;
-    profilesLoopLength = originalProfiles.length * profilesStep;
-    profilesPos = -profilesLoopLength;
-    profilesTrack.style.transition = 'none';
-    profilesTrack.style.transform = `translateX(${profilesPos}px)`;
+  profilesItemWidth = document.querySelector('.profile-img').offsetWidth;
+  profilesGap = parseFloat(getComputedStyle(profilesTrack).gap) || 0;
+  profilesStep = profilesItemWidth + profilesGap;
+  profilesLoopLength = originalProfiles.length * profilesStep;
+  profilesPos = -profilesLoopLength;
+  profilesTrack.style.transition = 'none';
+  profilesTrack.style.transform = `translateX(${profilesPos}px)`;
 });
 
 
@@ -106,7 +106,7 @@ const nextBtn = document.getElementById("next");
 
 const card = carousel.querySelector(".dr-card");
 const cardStyle = getComputedStyle(card);
-const cardWidth = card.offsetWidth + parseInt(cardStyle.marginRight) + 20; // card width + gap
+const cardWidth = card.offsetWidth + parseInt(cardStyle.marginRight) + 20;
 const visibleCards = Math.floor(carousel.offsetWidth / card.offsetWidth);
 
 let currentIndex = 0;
@@ -123,7 +123,7 @@ nextBtn.addEventListener("click", () => {
   if (currentIndex < maxIndex) {
     currentIndex++;
   } else {
-    currentIndex = maxIndex; // clamp at last
+    currentIndex = maxIndex;
   }
   updateCarousel();
 });
@@ -132,7 +132,7 @@ prevBtn.addEventListener("click", () => {
   if (currentIndex > 0) {
     currentIndex--;
   } else {
-    currentIndex = 0; // clamp at first
+    currentIndex = 0;
   }
   updateCarousel();
 });
