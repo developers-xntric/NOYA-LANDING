@@ -133,6 +133,18 @@ h6 {
     transition: transform 0.5s ease;
 }
 
+@media (max-width: 500px) {
+    .email-mob {
+        display: none;
+    }
+}
+
+@media (min-width: 501px) {
+    .desktop-email {
+        display: none;
+    }
+}
+
 .profile-img {
     width: 55px;
     height: 55px;
@@ -766,7 +778,7 @@ header .btn-consult {
     font-weight: 600;
     font-family: 'Urbanist', sans-serif;
     color: #FCCC9E;
-    
+
 }
 
 /* Right Side Form */
@@ -1025,7 +1037,7 @@ header .btn-consult {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 6rem ;
+    padding-top: 6rem;
     font-family: "Urbanist", sans-serif;
 }
 
@@ -1423,7 +1435,7 @@ header .btn-consult {
     letter-spacing: 3px;
     font-family: "Playfair Display", serif;
     display: flex;
-    
+
 }
 
 .footer-column h3 {
@@ -1595,10 +1607,11 @@ a {
 
 
 .service-card {
-  cursor: pointer;
-  transition: opacity 0.3s ease; /* Optional: subtle hover effect */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    /* Optional: subtle hover effect */
 }
 
 .service-card:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }
