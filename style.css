@@ -1433,7 +1433,7 @@ header .btn-consult {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 40px 0px;
+    padding-top: 40px;
     width: 90%;
     max-width: 1440px;
     margin-left: auto;
@@ -1548,9 +1548,7 @@ a {
 }
 
 /* Large Text Section */
-.footer-brand {
-    padding-top: 30px;
-}
+
 
 .footer-brand h2 {
     border-bottom: #FFFFFF33 solid 1px;
