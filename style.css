@@ -1602,6 +1602,15 @@ a {
 
 /* Responsive */
 
+@media (max-width: 1400px) {
+    
+    .footer-images img {
+        width: 272px;
+        height: 272px;
+    }
+
+}
+
 @media (max-width: 1300px) {
     
     .footer-images img {
