@@ -1581,16 +1581,8 @@ a {
 
 /* Responsive */
 
-@media (max-width: 1380px) {
-    .footer-main {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-brand h2 {
-        font-size: 2rem;
-    }
-
+@media (max-width: 1300px) {
+    
     .footer-images img {
         width: 253px;
         height: 250px;
