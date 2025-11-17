@@ -406,9 +406,9 @@ main {
 
 .dr-card img {
     width: 100%;
-    height: auto;
+     height: 78%; 
     margin-bottom: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .dr-card h3 {
@@ -1597,6 +1597,23 @@ a {
 }
 
 /* Responsive */
+
+@media (max-width: 1380px) {
+    .footer-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-brand h2 {
+        font-size: 2rem;
+    }
+
+    .footer-images img {
+        width: 253px;
+        height: 250px;
+    }
+
+}
 
 @media (max-width: 1024px) {
     .footer-main {
