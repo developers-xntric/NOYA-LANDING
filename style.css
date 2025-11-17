@@ -1475,6 +1475,9 @@ header .btn-consult {
     flex: 1 1 250px;
     margin: 15px;
 }
+.footer-column img{
+   width: 150px;
+}
 
 .footer-column p {
     font-family: "Urbanist", sans-serif;
@@ -1595,6 +1598,7 @@ a {
     font-size: 0.9rem;
     color: #d6b7b1;
 }
+
 
 /* Responsive */
 
