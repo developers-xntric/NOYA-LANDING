@@ -124,7 +124,7 @@ h6 {
 
 .profiles-container {
     overflow: hidden;
-    width: 190px;
+    width: 10px;
 }
 
 .profiles-track {
@@ -136,6 +136,7 @@ h6 {
 .profile-img {
     width: 55px;
     height: 55px;
+    display: none;
     border-radius: 50%;
     flex-shrink: 0;
 }
@@ -155,7 +156,7 @@ h6 {
 @media (max-width: 350px) {
     .profiles-container {
         overflow: hidden;
-        width: 55px;
+        width: 5px;
     }
 
     .card {
@@ -319,6 +320,19 @@ main {
     font-size: 17px;
 }
 
+@media (max-width: 770px) {
+.consultation-text h2 {
+    font-size: 30px;
+}
+.consultation-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+   
+}
+}
 
 @media (max-width: 480px) {
     .consultation-banner {
@@ -392,9 +406,9 @@ main {
 
 .dr-card img {
     width: 100%;
-    height: auto;
+     height: 78%; 
     margin-bottom: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .dr-card h3 {
@@ -476,7 +490,7 @@ main {
     .dr-card {
         flex: 0 0 100%;
         /* show 1 card */
-        max-width: 100%;
+        max-width: calc(33.33% );
     }
 
     .map-phone-desktop {
@@ -524,6 +538,7 @@ main {
 
 .map-container {
     display: flex;
+   
     justify-content: center;
     gap: 20px;
     border-radius: 30px;
@@ -610,7 +625,7 @@ iframe {
     width: 600px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 770px) {
     .map-container {
         display: flex;
         flex-direction: column;
@@ -938,7 +953,8 @@ header .btn-consult {
     header .btn-consult {
         padding: 8px 16px;
         font-size: 10px;
-        border-radius: 20px
+        border-radius: 20px;
+        display: none;
     }
 
     #noya-symbol {
@@ -1234,7 +1250,7 @@ header .btn-consult {
 
 @media (max-width: 768px) {
     .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     }
 
     .services-header {
@@ -1252,6 +1268,19 @@ header .btn-consult {
         padding: 0.5rem 1.2rem;
     }
 }
+
+@media (max-width: 425px) {
+    .services-grid {
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
+
+    .service-card {
+        width: 100%;
+        height: 100%; 
+    }
+}
+
 
 
 
@@ -1552,7 +1581,7 @@ a {
 
 .footer-brand h2 {
     border-bottom: #FFFFFF33 solid 1px;
-    font-size: 11vw;
+    font-size: 14vw;
     letter-spacing: 5px;
     font-family: "Afterglow", serif;
     font-weight: 400;
@@ -1568,6 +1597,23 @@ a {
 }
 
 /* Responsive */
+
+@media (max-width: 1380px) {
+    .footer-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-brand h2 {
+        font-size: 2rem;
+    }
+
+    .footer-images img {
+        width: 253px;
+        height: 250px;
+    }
+
+}
 
 @media (max-width: 1024px) {
     .footer-main {
@@ -1607,7 +1653,7 @@ a {
     }
 
     .footer-brand h2 {
-        font-size: 9vw;
+        font-size: 12.5vw;
         letter-spacing: 5px;
         color: #fff;
     }
